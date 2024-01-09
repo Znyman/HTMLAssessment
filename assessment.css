@@ -10,6 +10,7 @@ th {
 
 table {
 	border: 5px dotted orange;
+	text-align: center;
 }
 
 ul {
@@ -26,8 +27,18 @@ blockquote {
 	color: hotpink;
 }
 
-#teamRoster {
-	background: url("https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg") left top no-repeat, url("https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg") left bottom no-repeat;
+#teamRoster > li:first-child {
+	background: url("https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg") left top no-repeat;
+	background-size: contain;
+	background-blend-mode: color;
+	background-color: rgba(255, 255, 255, .7);
+}
+
+#teamRoster > li:last-child {
+	background: url("https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg") left bottom no-repeat;
+	background-size: contain;
+	background-blend-mode: color;
+	background-color: rgba(255, 255, 255, .7);
 }
 
 img {
